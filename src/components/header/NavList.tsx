@@ -5,9 +5,9 @@ import { usePathname } from 'next/navigation';
 
 const NavList = () => {
   const activePath = usePathname();
-  const activeStyle = 'gradient-text-primary font-semibold';
+  const activeStyle = 'gradient-text-primary font-semibold hover:drop-shadow-xl';
   return (
-    <nav>
+    <nav className='navlist'>
       <ul className="flex gap-2 md:gap-6 lg:gap-12 items-center font-semibold">
         <li
           className={`text-sm  md:text-lg ${

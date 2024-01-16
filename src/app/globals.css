@@ -15,3 +15,24 @@ svg {
   -webkit-text-fill-color: transparent;
 }
 
+.navlist a:hover,
+.navlist a:active {
+  background: linear-gradient(90deg, #ff8a05, #f9b331);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(248, 190, 42, 0.8);
+}
+
+.link-style {
+  background: linear-gradient(90deg, #f9572a, #ff9b05);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  text-align: center;
+  font-weight: 600;
+  color: #fbfbfb;
+}
+
+.link-style:hover {
+  background: linear-gradient(90deg, #fd4715, #f9b241);
+}

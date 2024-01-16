@@ -13,7 +13,7 @@ const CommunityPage = () => {
           One shared passion:{' '}
           <span className="gradient-text-primary">Food</span>
         </h1>
-        <p>Join our community and share your favorite recipes!</p>
+        <p className='text-lg lg:text-xl font-seimbold'>Join our community and share your favorite recipes!</p>
       </header>
       <main className="text-center my-6 lg:my-12">
         <h2 className="text-lg lg:text-2xl font-bold my-8">Community Perks</h2>

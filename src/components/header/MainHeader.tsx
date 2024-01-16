@@ -4,8 +4,8 @@ import ImageWrapper from '@/atoms/ImageWrapper';
 import NavList from './NavList';
 
 const MainHeader = () => (
-  <header className="flex w-full justify-between items-center ">
-    <Link href="/" className="flex gap-4 items-center ">
+  <header className="flex w-full justify-between items-center navlist">
+    <Link href="/" className="flex gap-4 items-center">
       <ImageWrapper
         src={Logo}
         imageSizes="h-12 w-12 lg:h-16 lg:w-16 "

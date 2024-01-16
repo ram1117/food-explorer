@@ -4,8 +4,7 @@ import ImageSlideShow from '@/components/images/ImageSlideshow';
 export default function Home() {
   const linkStyle1 =
     'text-sm lg:text-base gradient-text-primary py-2 px-3 rounded-md text-center lg:min-w-40';
-  const linkStyle2 =
-    'text-sm lg:text-base bg-gradient-to-r from-[#f9572a] to-[#ff9b05] hover:from-[#fd4715] hover:to-[#f9b241] py-2 px-3 rounded-md text-text-primary text-center lg:min-w-40 font-semibold';
+  const linkStyle2 = 'text-sm lg:text-base lg:min-w-40 link-style';
   return (
     <>
       <header className="flex flex-col md:flex-row gap-4 items-center md:items-start w-full md:justify-around mb-12">

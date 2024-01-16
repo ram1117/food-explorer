@@ -17,8 +17,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={montserrat.variable}>
-      <body className=" min-h-screen flex items-center flex-col m-4 text-text-primary bg-slate-900 font-montserrat">
-        <BackgroundSvg />
+      <body className=" min-h-screen flex items-center flex-col m-4 text-text-primary bg-slate-900 font-montserrat bg-main-bg bg-no-repeat bg-contain">
+        {/* <BackgroundSvg /> */}
 
         <main className="max-w-[1024px] w-full">
           <MainHeader />
