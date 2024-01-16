@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import MainHeader from '@/components/MainHeader';
+import MainHeader from '@/components/header/MainHeader';
 import BackgroundSvg from '@/components/BackgroundSvg';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -19,14 +19,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} min-h-screen flex items-center flex-col m-4 text-text-primary`}
+        className={`${inter.className} min-h-screen flex items-center flex-col m-4 text-text-primary bg-slate-900`}
       >
-        <div className="absolute w-full h-[140px] lg:h-[320px] top-0 left-0 -z-50">
-          <BackgroundSvg />
-        </div>
+        <BackgroundSvg />
 
-        <MainHeader />
-        {children}
+        <main className="max-w-[1024px] w-full">
+          <MainHeader />
+          {children}
+        </main>
       </body>
     </html>
   );

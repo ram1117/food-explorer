@@ -5,6 +5,7 @@ interface ImageWrapperProps {
   alt: string;
   imageSizes: string;
   sizes?: string;
+  className?: string;
 }
 
 const ImageWrapper = ({
@@ -12,9 +13,10 @@ const ImageWrapper = ({
   alt,
   imageSizes,
   sizes = '',
+  className = '',
 }: ImageWrapperProps) => (
   <div className={`relative ${imageSizes}`}>
-    <Image src={src} alt={alt} fill sizes={sizes} />
+    <Image src={src} alt={alt} fill sizes={sizes} className={className} />
   </div>
 );
 
