@@ -2,20 +2,16 @@ import Link from 'next/link';
 import ImageSlideShow from '@/components/images/ImageSlideshow';
 
 export default function Home() {
-  const gradientTextStyle =
-    'bg-gradient-to-r from-orange-600 via-orange-500 to-orange-300 inline-block text-transparent bg-clip-text';
   const linkStyle1 =
-    'text-sm lg:text-base bg-transparent text-[#ff9b05] hover:text-[#f9b241] py-2 px-3 rounded-md text-center lg:min-w-40';
+    'text-sm lg:text-base gradient-text-primary py-2 px-3 rounded-md text-center lg:min-w-40';
   const linkStyle2 =
     'text-sm lg:text-base bg-gradient-to-r from-[#f9572a] to-[#ff9b05] hover:from-[#fd4715] hover:to-[#f9b241] py-2 px-3 rounded-md text-text-primary text-center lg:min-w-40 font-semibold';
   return (
     <>
-      <header className="flex flex-col md:flex-row gap-4 items-center md:items-start w-full md:justify-around mt-12 md:mt-30 mb-12">
+      <header className="flex flex-col md:flex-row gap-4 items-center md:items-start w-full md:justify-around mb-12">
         <ImageSlideShow />
         <div className="flex gap-4 lg:gap-8 flex-col sm:w-3/5 lg:w-1/2">
-          <h1
-            className={`${gradientTextStyle} text-xl lg:text-2xl font-bold uppercase`}
-          >
+          <h1 className="gradient-text-primary text-xl lg:text-2xl font-bold uppercase">
             Welcome to Food Explorer
           </h1>
           <h3 className="text-sm lg:text-base">
@@ -34,7 +30,7 @@ export default function Home() {
       </header>
       <main className="flex flex-col items-center">
         <section className="flex flex-col gap-4 lg:gap-8">
-          <h2 className="text-center text-lg lg:text-2xl font-bold text-slate-100">
+          <h2 className="text-center text-lg lg:text-2xl font-bold">
             How it works
           </h2>
           <p>

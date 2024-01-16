@@ -14,8 +14,14 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      backgroundColor:{
+        'gradient-primnary':'linear-gradient(90deg, #f9572a, #ff8a05)'
+      },
+      fontFamily:{
+        montserrat:'var(--font-montserrat)'
+      },
       colors: {
-        'text-primary': '#fbfbfb',
+        'text-primary': '#ddd6cb',
       },
     },
   },
