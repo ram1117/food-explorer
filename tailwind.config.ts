@@ -16,7 +16,21 @@ const config: Config = {
         "main-bg": "url(/main-bg.svg)",
         "tile-gradient": "linear-gradient(90deg, #2c1e19, #25200f)",
       },
-
+      keyframes: {
+        "fade-slide-in-from-bottom": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(1rem)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+      },
+      animation: {
+        "slide-right": "fade-slide-in-from-bottom 1s ease-out forwards;",
+      },
       backgroundColor: {
         "gradient-primnary": "linear-gradient(90deg, #f9572a, #ff8a05)",
       },
