@@ -1,7 +1,7 @@
-import Image, { StaticImageData } from 'next/image';
+import Image from "next/image";
 
 interface ImageWrapperProps {
-  src: string | StaticImageData;
+  src: any;
   alt: string;
   imageSizes: string;
   sizes?: string;
@@ -12,8 +12,8 @@ const ImageWrapper = ({
   src,
   alt,
   imageSizes,
-  sizes = '',
-  className = '',
+  sizes = "",
+  className = "",
 }: ImageWrapperProps) => (
   <div className={`relative ${imageSizes}`}>
     <Image src={src} alt={alt} fill sizes={sizes} className={className} />
