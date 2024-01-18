@@ -4,6 +4,12 @@ import { getMeals } from "@/lib/meals";
 import { Suspense } from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import ErrorUi from "./error";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "All Recipes",
+  description: "Own and secret family recipes shared by users like you",
+};
 
 const GridWrapper = async () => {
   const meals = await getMeals();

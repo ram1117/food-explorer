@@ -1,13 +1,11 @@
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import './globals.css';
-import MainHeader from '@/components/header/MainHeader';
-import BackgroundSvg from '@/components/BackgroundSvg';
-import { montserrat } from '@/atoms/fonts';
+import type { Metadata } from "next";
+import "./globals.css";
+import MainHeader from "@/components/header/MainHeader";
+import { montserrat } from "@/atoms/fonts";
 
 export const metadata: Metadata = {
-  title: 'Food Explorer',
-  description: 'Food explorer website for food enthusiasts',
+  title: "Food Explorer",
+  description: "Food explorer website for food enthusiasts",
 };
 
 export default function RootLayout({

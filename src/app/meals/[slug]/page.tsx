@@ -6,6 +6,17 @@ interface SlugPageProps {
   params: { slug: string };
 }
 
+export const generateMetadata = async ({ params }: SlugPageProps) => {
+  const mealData = getMeal(params.slug);
+  if (!mealData) {
+    notFound();
+  }
+  return {
+    title: mealData.title,
+    description: mealData.summary,
+  };
+};
+
 const SlugPage = ({ params }: SlugPageProps) => {
   const slug = params.slug;
   const mealData = getMeal(slug);

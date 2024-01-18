@@ -2,6 +2,7 @@
 import { redirect } from "next/navigation";
 import { postMealData } from "./meals";
 import z from "zod";
+import { revalidatePath } from "next/cache";
 const ACCEPTED_IMAGE_TYPES = [
   "image/jpeg",
   "image/jpg",
@@ -39,6 +40,7 @@ export const postMeal = async (prevState: any, formData: any) => {
   const validation = validateInputs(mealItem);
   if (validation.success) {
     await postMealData(mealItem);
+    revalidatePath("/meals", "layout");
     redirect("/meals");
   }
   if (validation.error) {

@@ -12,7 +12,6 @@ const SharePage = () => {
     "px-2 py-1 rounded-sm border border-[#454952] bg-[#1c2027] text-base lg:text-lg text-[#ddd6cb] focus:outline-[#f99f2a] focus:bg-[#1f252d] focus:ring-0";
 
   const [state, formAction] = useFormState(postMeal, null);
-  console.log(state);
 
   return (
     <>
