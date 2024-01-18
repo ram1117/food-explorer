@@ -1,8 +1,8 @@
-# Film Festival TN
+# Food Explorer
 
 ## Description
 
-**Film Festival TN** is an improved version of my previous [Filmfestival HTML/CSS/JavaScript](https://github.com/ram1117/capstone-project-1-filmfestival) I have swtiched to using NextJS14, Typescript and TailwindCSS.
+**Food explorer** is a NextJS14 project, where users can share and read other users recipes. Hybrid application that makes use of ssr server actions and data fetching to store and retrienve data from an sqlite database. Used Typescript, TailwindCSS and NextJS 14
 
 ### Live Demo
 
@@ -20,12 +20,12 @@
 - Clone the repo in your local machine.
 
   ```
-  https://github.com/ram1117/filmfestival-v2-fe.git
+  https://github.com/ram1117/food-explorer.git
   ```
 
 - Run the following command to install the project dependencies using npm
   ```
-  cd filmfestival-v2-fe
+  cd food-explorer
   ```
   ```
   npm install
@@ -44,7 +44,7 @@
 Please raise a Github issue for errors or bugs.
 
 ```
-https://github.com/ram1117/filmfestival-v2-fe/issues
+https://github.com/ram1117/food-explorer/issues
 ```
 
 ## Authors
