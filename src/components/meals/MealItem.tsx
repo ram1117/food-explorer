@@ -14,6 +14,7 @@ const MealItem = ({ meal }: MealItemProps) => {
           src={meal.image}
           alt="image of a prepared meal"
           imageSizes="h-60 w-full"
+          sizes="(min-width: 808px) 100vw, 40vw"
         />
         <div className="p-2">
           <h2 className="text-lg lg:text-xl font-semibold">{meal.title}</h2>

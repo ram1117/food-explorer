@@ -1,11 +1,19 @@
+"use client";
+
+import { useFormState } from "react-dom";
 import ImagePicker from "@/components/meals/ImagePicker";
 import { postMeal } from "@/lib/actions";
+import FormSubmit from "@/components/meals/FormSubmit";
 
 const SharePage = () => {
   const formRowStyle = "flex flex-col gap-2 my-2 lg:my-4";
   const labelStyle = "text-xs font-bold md:text-sm uppercase";
   const inputStyle =
     "px-2 py-1 rounded-sm border border-[#454952] bg-[#1c2027] text-base lg:text-lg text-[#ddd6cb] focus:outline-[#f99f2a] focus:bg-[#1f252d] focus:ring-0";
+
+  const [state, formAction] = useFormState(postMeal, null);
+  console.log(state);
+
   return (
     <>
       <header>
@@ -16,7 +24,7 @@ const SharePage = () => {
         <p>Or any other Recipe you would like to share with other foodies...</p>
       </header>
       <main className="my-8 lg:my-16">
-        <form action={postMeal} id="meal-form" className="w-full lg:w-4/5">
+        <form action={formAction} id="meal-form" className="w-full lg:w-4/5">
           <div className="flex md:flex-row flex-col gap-0 md:gap-4 w-full">
             <div className={`${formRowStyle} w-full md:w-1/2`}>
               <label htmlFor="input-name" className={labelStyle}>
@@ -83,10 +91,17 @@ const SharePage = () => {
             {" "}
             <ImagePicker label="Choose an image.." name="image" />
           </div>
+          {state && (
+            <ul className="flex gap-2 flex-col text-red-500">
+              {state.map((item) => (
+                <li
+                  key={item.path[0]}
+                >{`${item.path[0]} - ${item.message}*`}</li>
+              ))}
+            </ul>
+          )}
           <div className="flex justify-end">
-            <button type="submit" className="!px-12 link-style">
-              Share
-            </button>
+            <FormSubmit />
           </div>
         </form>
       </main>
