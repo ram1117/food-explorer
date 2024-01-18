@@ -13,7 +13,7 @@ const MealItem = ({ meal }: MealItemProps) => {
         <ImageWrapper
           src={meal.image}
           alt="image of a prepared meal"
-          imageSizes="h-60 w-full"
+          imageSizes="aspect-square sm:aspect-none sm:h-60 w-full"
           sizes="(min-width: 808px) 100vw, 40vw"
         />
         <div className="p-2">

@@ -65,4 +65,4 @@ This project is [MIT](./LICENSE) licensed. See the LICENSE.md file for details
 
 ## Acknowledgments
 
-N/A
+I really appreciate [Maximilian Schwarzmüller's Udemy lecture](https://www.udemy.com/share/104coM3@hD12TiC1yL4_T_nqXx3hnK5FGU80NeaLl-q8H7M_xCHDsBo_Tjgf_E1Yg-etb_QSVw==/)
